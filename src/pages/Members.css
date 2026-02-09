@@ -1,0 +1,80 @@
+.members-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.members-tabs button {
+  padding: 10px 24px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-light);
+  background: var(--bg-alt);
+  border: 2px solid transparent;
+  transition: all var(--transition);
+}
+
+.members-tabs button.active {
+  color: var(--primary);
+  background: rgba(15, 76, 129, 0.08);
+  border-color: var(--primary);
+}
+
+.members-tabs button:hover {
+  color: var(--primary);
+}
+
+.member-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 20px 24px;
+}
+
+.member-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-light), var(--accent));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.member-info h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.member-info .topic {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin-bottom: 2px;
+}
+
+.member-info .year {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.member-info .current {
+  font-size: 0.82rem;
+  color: var(--accent-dark);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .member-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}

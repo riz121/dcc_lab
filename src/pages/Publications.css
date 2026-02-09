@@ -1,0 +1,83 @@
+.pub-filters {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.pub-filters button {
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-light);
+  background: var(--bg-alt);
+  border: 2px solid transparent;
+  transition: all var(--transition);
+}
+
+.pub-filters button.active {
+  color: var(--primary);
+  background: rgba(15, 76, 129, 0.08);
+  border-color: var(--primary);
+}
+
+.pub-filters button:hover {
+  color: var(--primary);
+}
+
+.pub-year-group {
+  margin-bottom: 36px;
+}
+
+.pub-year-group h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--border-light);
+}
+
+.pub-item {
+  padding: 18px 24px;
+  margin-bottom: 12px;
+  border-left: 3px solid transparent;
+  transition: border-color var(--transition);
+}
+
+.pub-item:hover {
+  border-left-color: var(--accent);
+}
+
+.pub-item .pub-type {
+  margin-bottom: 8px;
+}
+
+.pub-item h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+.pub-item .authors {
+  font-size: 0.88rem;
+  color: var(--text-light);
+  margin-bottom: 4px;
+}
+
+.pub-item .venue {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.pub-count {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 0.92rem;
+  color: var(--text-light);
+}

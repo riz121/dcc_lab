@@ -1,0 +1,154 @@
+.about-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.about-intro-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.about-intro-text p {
+  color: var(--text-light);
+  margin-bottom: 16px;
+  line-height: 1.8;
+}
+
+.about-image-placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 4rem;
+}
+
+.vision-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.vision-card {
+  text-align: center;
+  padding: 40px 28px;
+}
+
+.vision-card .vision-icon {
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 18px;
+}
+
+.vision-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+.vision-card p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+.area-card {
+  text-align: center;
+  padding: 32px 20px;
+}
+
+.area-dot {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  background: linear-gradient(135deg, rgba(0, 180, 216, 0.12), rgba(15, 76, 129, 0.12));
+  color: var(--primary);
+}
+
+.area-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.area-card p {
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-left: 40px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--border);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -33px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 3px solid var(--bg);
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+.timeline-item .year {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--accent-dark);
+  margin-bottom: 4px;
+}
+
+.timeline-item h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.timeline-item p {
+  font-size: 0.88rem;
+  color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+  .about-intro {
+    grid-template-columns: 1fr;
+  }
+  .vision-grid {
+    grid-template-columns: 1fr;
+  }
+}
